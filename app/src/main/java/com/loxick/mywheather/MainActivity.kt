@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
      when(month){
          12 -> {
              wetherIco.setImageResource(R.drawable.winter)
-             //setParameters(-10,-3)
+             setParameters(-10,-3)
          }
          1 -> {
              wetherIco.setImageResource(R.drawable.winter)
