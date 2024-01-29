@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B3147"
+    android:backgroundTint="#1B3147"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="398dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="30/10"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F8F8F8"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/WheatherIco"
+        android:layout_width="407dp"
+        android:layout_height="254dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vesna" />
+
+    <Button
+        android:id="@+id/showWheatherButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="262dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="38dp"
+        android:gravity="center"
+        android:text="Show Weather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="398dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:text="@string/city"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F8F8F8"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempreatureText"
+        android:layout_width="404dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="3°/4°"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WheatherIco" />
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/showWheatherButton"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/preasureText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Preasure:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/windText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/feelsLikeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Feels like:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/HumidityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Humidity:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
